@@ -6,7 +6,6 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  /* Flexbox for aligning items */
   .flex-row {
     display: flex;
     flex-direction: row;
@@ -19,7 +18,6 @@
     gap: 10px;
   }
   
-  /* Grid for more complex layouts */
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
