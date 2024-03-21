@@ -91,12 +91,12 @@ const Detail = () => {
 
   return (
     <div className='component-section'>
-        <h1>Game Detail</h1>
+        <h1>Leikur</h1>
         <select
           value={selectedGameId}
           onChange={(e) => setSelectedGameId(e.target.value)}
         >
-          <option value="">Select a game</option>
+          <option value="">Veldu leik</option>
           {games.map((game) => (
             <option key={game.id} value={game.id}>
               {game.date} - {game.home.name} vs. {game.away.name}
@@ -111,16 +111,16 @@ const Detail = () => {
                         <Input 
                                 value={homeScore}
                                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setHomeScore(e.target.value)}
-                                placeholder="Home team score"
+                                placeholder="Heima lið mörk"
                         />
                         <Input 
                                 value={awayScore}
                                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setAwayScore(e.target.value)}
-                                placeholder="Away team score"
+                                placeholder="Gesta lið mörk"
                         />
-                        <Button onClick={handleUpdateGame}>Update Game</Button>
+                        <Button onClick={handleUpdateGame}>Uppfæra leik</Button>
                 </Form>
-                <Button onClick={deleteGame}>Delete Game</Button>
+                <Button onClick={deleteGame}>Eyða leik</Button>
             </>
         )}
     </div>
